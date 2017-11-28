@@ -9,7 +9,7 @@ blogs.methods(['get', 'delete']);
 blogs.register(router, '/blogs');
 console.log('blog regestered at "/blogs"');
 
-var blogPosts = require('./blogpost').restful;
+var blogPosts = require('./blogPost').restful;
 blogPosts.methods(['get', 'put', 'delete']);
 blogPosts.register(router, '/blogposts');
 console.log('blogPost regestered at "/blogposts"');
