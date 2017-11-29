@@ -45,7 +45,7 @@ var app = express();
 app.use(function (req, res, next) {
 
   // Website you wish to allow to connect
-  res.setHeader('Access-Control-Allow-Origin', 'https://mighty-coast-42924.herokuapp.com');
+  res.setHeader('Access-Control-Allow-Origin', 'https://aqueous-reef-98318.herokuapp.com');
 
   // Request methods you wish to allow
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
