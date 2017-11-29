@@ -2,7 +2,7 @@ var Busboy = require("busboy");
 var path = require("path");
 var fs = require("fs");
 var sha1 = require("sha1");
-
+var globals = require("globals");
 
 
 // Gets a filename extension.
@@ -95,7 +95,7 @@ function upload (req, callback) {
         return handleStreamError("File does not meet the validation.");
       }
 
-      return callback(null, {link: "http://localhost:3000" + link});
+      return callback(null, {link: globals.HOSTED_URL + link});
     });
 
     // Save image to disk.
