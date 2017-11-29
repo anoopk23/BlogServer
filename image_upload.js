@@ -2,7 +2,7 @@ var Busboy = require("busboy");
 var path = require("path");
 var fs = require("fs");
 var sha1 = require("sha1");
-var globals = require("globals");
+var globals = require("./globals");
 
 
 // Gets a filename extension.
